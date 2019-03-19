@@ -1,0 +1,86 @@
+*{
+  font-family: 'Arvo', serif;
+}
+
+html{
+  background-color: lightgrey;
+}
+
+.adsbox{
+    display: none;
+}
+
+body {
+  height: 100%;
+  background-color: lightgrey;
+}
+
+.app{
+  height: 100%;
+}
+
+.header {
+  background-color: #222;
+  height: 65px;
+  padding: 18px;
+  color: white;
+  box-shadow: 1px 3px 7px black;
+}
+
+.hide{
+  display: none;
+}
+
+/* Make radio buttons larger */ 
+.gameScreen input[type=radio]{
+  transform:scale(2);
+}
+
+/* Background image and color */
+
+.page_bg_on{
+  height: 100%;
+  min-height: 100vh;
+  background-image: url('assets/bg3.jpg');
+  background-size: cover;
+}
+
+.bg_grey{
+  background-color: lightgrey;
+}
+
+
+.exerciseInstructions{
+    top: 3vh;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 10px black;
+}
+
+
+/* Mobile overlay */
+
+@media (max-width: 768px){
+.mobileOverlay{
+  display: block;
+  z-index: 10;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.message{
+  color: white;
+  top: 30vh;
+  height: 30vh;
+}
+.contentWrapper{
+  display: none;
+}
+}
+
+@media (min-width: 769px){
+  .mobileOverlay{
+    display: none;
+ 
+  }}
